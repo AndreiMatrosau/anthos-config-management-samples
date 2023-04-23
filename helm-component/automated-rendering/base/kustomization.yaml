@@ -12,9 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 helmCharts:
-- name: cert-manager
+# - name: cert-manager
 #   repo: https://charts.jetstack.io
-  repo: https://github.com/Dynatrace/helm-charts/blob/master/repos/stable
-  version: v1.11.0
-  releaseName: my-cert-manager
-  namespace: cert-manager
+- name: dynatrace-operator
+  repo: https://github.com/Dynatrace/helm-charts/blob/master/repos/stable/index.yaml
+  version: 0.9.1
+  releaseName: dynatrace-operator
+  namespace: dynatrace
